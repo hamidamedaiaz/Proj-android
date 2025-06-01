@@ -16,7 +16,10 @@
     <color name="yellow">#FFFF00</color>
     <string name="app_name">Fil rouge vide</string>
     <string name="index">index</string>
+    <string name="menuNumber">menuNumber</string>
     <string name="seekbarvalue">seekBarValue</string>
+    <string name="tableau">tableau</string>
+    <string name="taquinState">taquinState</string>
     <style name="MenuImage" parent="ShapeAppearance.MaterialComponents.SmallComponent">
         <item name="cornerSize">10%</item>
     </style>

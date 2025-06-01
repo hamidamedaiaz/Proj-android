@@ -12,17 +12,14 @@ import androidx.fragment.app.Fragment;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class MenuFragment extends Fragment{
     private final String TAG = "frallo "+getClass().getSimpleName();
     private Menuable menuable;
     private int currentActivatedIndex = 0;
 
-
     public MenuFragment() {
         Log.d(TAG, "MenuFragment created");
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,  Bundle savedInstanceState) {
@@ -33,15 +30,24 @@ public class MenuFragment extends Fragment{
         if (getArguments() != null) {
             currentActivatedIndex = getArguments().getInt(getString(R.string.index), 1)-1;  //convert menu number to index
         }
-        imageViews.get(currentActivatedIndex).setImageResource(  view.getResources().getIdentifier("menu"+(currentActivatedIndex+1)+"_s", "mipmap", view.getContext().getPackageName()) );
-        //Log.d(TAG, "BEGIN : menu index " +  currentActivatedIndex + " is selected");
+
+        // Utilisation des drawables au lieu des mipmaps avec gestion d'erreur
+        try {
+            imageViews.get(currentActivatedIndex).setImageResource(
+                    view.getResources().getIdentifier("menu"+(currentActivatedIndex+1)+"_s", "drawable", view.getContext().getPackageName())
+            );
+        } catch (Exception e) {
+            Log.w(TAG, "Resource not found for selected menu, falling back to mipmap");
+            imageViews.get(currentActivatedIndex).setImageResource(
+                    view.getResources().getIdentifier("menu"+(currentActivatedIndex+1)+"_s", "mipmap", view.getContext().getPackageName())
+            );
+        }
 
         //notify activity the menu is selected
         menuable.onMenuChange(currentActivatedIndex);
 
         TextView text = view.findViewById(R.id.txtFragmentMenu);
         text.setText("Menu");
-
 
         for(ImageView imageView : imageViews) {
             imageView.setOnClickListener( menu -> {
@@ -51,19 +57,31 @@ public class MenuFragment extends Fragment{
                 //notify activity currentIndexChange
                 menuable.onMenuChange(currentActivatedIndex);
 
-                //display old menu in gray
-                imageViews.get(oldIndex).setImageResource(  view.getResources().getIdentifier("menu"+(oldIndex+1), "mipmap", view.getContext().getPackageName()) );
+                //display old menu in gray (try drawable first, fallback to mipmap)
+                try {
+                    imageViews.get(oldIndex).setImageResource(
+                            view.getResources().getIdentifier("menu"+(oldIndex+1), "drawable", view.getContext().getPackageName())
+                    );
+                } catch (Exception e) {
+                    imageViews.get(oldIndex).setImageResource(
+                            view.getResources().getIdentifier("menu"+(oldIndex+1), "mipmap", view.getContext().getPackageName())
+                    );
+                }
 
-                //display new menu in green
-                ((ImageView)menu).setImageResource(  view.getResources().getIdentifier("menu"+(currentActivatedIndex+1)+"_s", "mipmap", view.getContext().getPackageName()) );
+                //display new menu in green (try drawable first, fallback to mipmap)
+                try {
+                    ((ImageView)menu).setImageResource(
+                            view.getResources().getIdentifier("menu"+(currentActivatedIndex+1)+"_s", "drawable", view.getContext().getPackageName())
+                    );
+                } catch (Exception e) {
+                    ((ImageView)menu).setImageResource(
+                            view.getResources().getIdentifier("menu"+(currentActivatedIndex+1)+"_s", "mipmap", view.getContext().getPackageName())
+                    );
+                }
             });
         }
         return view;
     }
-
-
-
-
 
     // browse rootView and sort all buttons in "buttons" list
     private List<ImageView> findPicturesMenuFromId(View view) {
@@ -84,17 +102,14 @@ public class MenuFragment extends Fragment{
         return pictures;
     }
 
-
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-
         if (requireActivity() instanceof Menuable) {
             menuable = (Menuable) requireActivity();
-            Log.d(TAG, "Class " + requireActivity().getClass().getSimpleName() + " implements Notifiable.");
+            Log.d(TAG, "Class " + requireActivity().getClass().getSimpleName() + " implements Menuable.");
         } else {
-            throw new AssertionError("Classe " + requireActivity().getClass().getName() + " ne met pas en œuvre Notifiable.");
+            throw new AssertionError("Classe " + requireActivity().getClass().getName() + " ne met pas en œuvre Menuable.");
         }
     }
-
 }

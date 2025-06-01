@@ -2,4 +2,7 @@
     <string name="app_name">Fil rouge vide</string>
     <string name="seekbarvalue">seekBarValue</string>
     <string name="index">index</string>
+    <string name="taquinState">taquinState</string>
+    <string name="menuNumber">menuNumber</string>
+    <string name="tableau">tableau</string>
 </resources>

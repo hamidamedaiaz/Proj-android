@@ -1,6 +1,5 @@
 package edu.polytech.vide;
 
-import static edu.polytech.vide.Menuable.TAG_MENU1;
 
 import android.content.Context;
 import android.os.Bundle;

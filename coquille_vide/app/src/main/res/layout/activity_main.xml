@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- Image de fond avec alpha -->
     <ImageView
         android:id="@+id/backgroundImage"
         android:layout_width="match_parent"
@@ -20,51 +19,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_height="280dp"
-        android:layout_width="400dp"
-        android:layout_marginTop="72dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Polytech app"
+        android:text="Open Street Map"
         android:textSize="40sp"
+        android:fontFamily="@font/pokemonsolid"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rallo"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
     <Button
         android:id="@+id/goDefault"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="defaut"
-        android:layout_marginBottom="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/option1" />
-
-    <Button
-        android:id="@+id/option1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="option1"
-        app:layout_constraintBottom_toBottomOf="@id/goDefault"
-        app:layout_constraintStart_toEndOf="@id/goDefault"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:text="MAP"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="@id/image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

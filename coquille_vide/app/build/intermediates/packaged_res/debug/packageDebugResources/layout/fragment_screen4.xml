@@ -3,19 +3,162 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DF91FF"
+    android:background="#FBC02D"
     tools:context=".Screen4Fragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/rootview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/rootview"
-        tools:context=".MainActivity">
+        android:padding="16dp">
 
+        <!-- Titre du jeu -->
+        <TextView
+            android:id="@+id/titleTaquin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JEU DU TAQUIN"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
+        <!-- Grille 3x3 pour les boutons du Taquin -->
+        <GridLayout
+            android:id="@+id/taquinGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@id/titleTaquin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- Boutons du Taquin -->
+            <Button
+                android:id="@+id/button1"
+                android:tag="1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="2dp"
+                android:text="1"
+                android:textSize="18sp"
+                android:backgroundTint="#4CAF50" />
+
+            <Button
+                android:id="@+id/button2"
+                android:tag="2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="2dp"
+                android:text="2"
+                android:textSize="18sp"
+                android:backgroundTint="#4CAF50" />
+
+            <Button
+                android:id="@+id/button3"
+                android:tag="3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="2dp"
+                android:text="3"
+                android:textSize="18sp"
+                android:backgroundTint="#4CAF50" />
+
+            <Button
+                android:id="@+id/button4"
+                android:tag="4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="2dp"
+                android:text="4"
+                android:textSize="18sp"
+                android:backgroundTint="#4CAF50" />
+
+            <Button
+                android:id="@+id/button5"
+                android:tag="5"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="2dp"
+                android:text="5"
+                android:textSize="18sp"
+                android:backgroundTint="#4CAF50" />
+
+            <Button
+                android:id="@+id/button6"
+                android:tag="6"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="2dp"
+                android:text="6"
+                android:textSize="18sp"
+                android:backgroundTint="#4CAF50" />
+
+            <Button
+                android:id="@+id/button7"
+                android:tag="7"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="2dp"
+                android:text="7"
+                android:textSize="18sp"
+                android:backgroundTint="#4CAF50" />
+
+            <Button
+                android:id="@+id/button8"
+                android:tag="8"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="2dp"
+                android:text="8"
+                android:textSize="18sp"
+                android:backgroundTint="#4CAF50" />
+
+            <Button
+                android:id="@+id/button9"
+                android:tag="9"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="2dp"
+                android:text="9"
+                android:textSize="18sp"
+                android:backgroundTint="#4CAF50" />
+
+        </GridLayout>
+
+        <!-- Bouton Start/Rejouer -->
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="START"
+            android:textSize="18sp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#FF9800"
+            app:layout_constraintTop_toBottomOf="@id/taquinGrid"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Instructions -->
+        <TextView
+            android:id="@+id/instructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cliquez sur START pour mélanger les tuiles,\npuis réorganisez-les dans l'ordre 1-8"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintTop_toBottomOf="@id/start"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

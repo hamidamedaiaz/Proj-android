@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
  *
  *     MainActivity, which contains a frame-by-frame animation.
  *     ControlActivity, which contains two fragments:
- *         MenuFragment (static fragment)
+ *         MenuFragment (static fragment ...mais devient dynamique lorsqu'on veut le démarrer avec un paramètre)
  *         Screen1Fragment (dynamic fragment)
  *
  * @author F. Rallo - march 2025
@@ -27,19 +27,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Intent intent = new Intent(getApplicationContext(), ControlActivity.class);
 
-        ImageView image = findViewById(R.id.imageView);
-        image.setBackgroundResource(R.drawable.rotation_animation);
-        AnimationDrawable animation = (AnimationDrawable)image.getBackground();
-        animation.start();
+        ImageView image = findViewById(R.id.image);
+        image.setImageResource(R.drawable.rallo);
 
-        //default button
+        //optional button --> goto menu5
         findViewById(R.id.goDefault).setOnClickListener(clic -> {
-            startActivity(intent);
-        });
-
-        //optional button --> goto menu6
-        findViewById(R.id.option1).setOnClickListener(clic -> {
-            int menuNumber = 6;  //this is number, not index
+            int menuNumber = 5;  //this is number, not index
             intent.putExtra(getString(R.string.index),menuNumber);
             Log.d(TAG,"send menu#"+menuNumber);
             startActivity(intent);

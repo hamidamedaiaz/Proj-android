@@ -56,7 +56,7 @@
                 android:layout_weight="1"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:src="@mipmap/menu1"
+                android:src="@drawable/menu1"
                 app:shapeAppearanceOverlay="@style/MenuImage" />
 
             <com.google.android.material.imageview.ShapeableImageView
@@ -68,7 +68,7 @@
                 android:layout_weight="1"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:src="@mipmap/menu2"
+                android:src="@drawable/menu2"
                 app:shapeAppearanceOverlay="@style/MenuImage" />
 
             <com.google.android.material.imageview.ShapeableImageView
@@ -80,7 +80,7 @@
                 android:layout_weight="1"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:src="@mipmap/menu3"
+                android:src="@drawable/menu3"
                 app:shapeAppearanceOverlay="@style/MenuImage" />
 
             <com.google.android.material.imageview.ShapeableImageView
@@ -92,7 +92,7 @@
                 android:layout_weight="1"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:src="@mipmap/menu4"
+                android:src="@drawable/menu4"
                 app:shapeAppearanceOverlay="@style/MenuImage" />
 
 
@@ -105,7 +105,7 @@
                 android:layout_weight="1"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:src="@mipmap/menu5"
+                android:src="@drawable/menu5"
                 app:shapeAppearanceOverlay="@style/MenuImage" />
 
 
@@ -118,7 +118,7 @@
                 android:layout_weight="1"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:src="@mipmap/menu6"
+                android:src="@drawable/menu6"
                 app:shapeAppearanceOverlay="@style/MenuImage" />
 
 
