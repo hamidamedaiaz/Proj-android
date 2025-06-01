@@ -24,20 +24,20 @@
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-main-45:\\mipmap-hdpi\\menu2.png"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-debug-43:\\drawable_fondmenu.png.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-main-45:\\drawable\\fondmenu.png"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-debug-43:\\anim_up.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-main-45:\\anim\\up.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-debug-43:\\drawable_earth9.png.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-main-45:\\drawable\\earth9.png"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-debug-43:\\drawable_fondmenu.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-main-45:\\drawable\\fondmenu.png"
     },
     {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-debug-43:\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-main-45:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "edu.polytech.vide.app-debug-43:/layout_fragment_screen3.xml.flat",
-        "source": "edu.polytech.vide.app-main-45:/layout/fragment_screen3.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-debug-43:\\drawable_earth9.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-main-45:\\drawable\\earth9.png"
     },
     {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-debug-43:\\drawable_camera.jpg.flat",
@@ -88,6 +88,10 @@
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-main-45:\\layout\\fragment_screen3.xml"
     },
     {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-debug-43:\\anim_down.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-main-45:\\anim\\down.xml"
+    },
+    {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-debug-43:\\mipmap-hdpi_menu1_s.png.flat",
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-main-45:\\mipmap-hdpi\\menu1_s.png"
     },
@@ -104,6 +108,10 @@
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-main-45:\\font\\pokemonsolid.ttf"
     },
     {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-debug-43:\\anim_right.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-main-45:\\anim\\right.xml"
+    },
+    {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-debug-43:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-main-45:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
@@ -112,12 +120,12 @@
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-main-45:\\drawable\\earth7.png"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-debug-43:\\layout_fragment_screen6.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-main-45:\\layout\\fragment_screen6.xml"
-    },
-    {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-debug-43:\\drawable_fond3.png.flat",
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-main-45:\\drawable\\fond3.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-debug-43:\\layout_fragment_screen6.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-main-45:\\layout\\fragment_screen6.xml"
     },
     {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-debug-43:\\drawable_menu6.png.flat",
@@ -176,6 +184,10 @@
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-main-45:\\font\\tribe.ttf"
     },
     {
+        "merged": "edu.polytech.vide.app-debug-43:/layout_fragment_screen4.xml.flat",
+        "source": "edu.polytech.vide.app-main-45:/layout/fragment_screen4.xml"
+    },
+    {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-debug-43:\\drawable_fond1.jpg.flat",
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-main-45:\\drawable\\fond1.jpg"
     },
@@ -218,6 +230,10 @@
     {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-debug-43:\\drawable_menu2.png.flat",
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-main-45:\\drawable\\menu2.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-debug-43:\\anim_left.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-main-45:\\anim\\left.xml"
     },
     {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\edu.polytech.vide.app-debug-43:\\mipmap-hdpi_menu5.jpg.flat",

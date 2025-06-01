@@ -27,7 +27,9 @@ anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
+anim down
 anim fragment_fast_out_extra_slow_in
+anim left
 anim linear_indeterminate_line1_head_interpolator
 anim linear_indeterminate_line1_tail_interpolator
 anim linear_indeterminate_line2_head_interpolator
@@ -43,6 +45,8 @@ anim m3_side_sheet_exit_to_right
 anim mtrl_bottom_sheet_slide_in
 anim mtrl_bottom_sheet_slide_out
 anim mtrl_card_lowers_interpolator
+anim right
+anim up
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -3511,7 +3515,6 @@ id immediateStop
 id included
 id indeterminate
 id info
-id instructions
 id invisible
 id inward
 id italic
@@ -3519,6 +3522,7 @@ id item_touch_helper_previous_elevation
 id itemsMenu
 id jumpToEnd
 id jumpToStart
+id label
 id labeled
 id layout
 id left
@@ -3752,7 +3756,6 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
-id taquinGrid
 id text
 id text2
 id textEnd
@@ -3773,7 +3776,6 @@ id textinput_suffix_text
 id time
 id title
 id titleDividerNoCustom
-id titleTaquin
 id titleText
 id title_template
 id toggle
@@ -4284,6 +4286,7 @@ string states
 string status_bar_notification_info_overflow
 string summary_collapsed_preference_list
 string tableau
+string tanquinstate
 string taquinState
 string topo
 string unknown

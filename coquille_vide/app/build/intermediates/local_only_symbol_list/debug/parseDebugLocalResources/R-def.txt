@@ -1,5 +1,9 @@
 R_DEF: Internal format may change without notice
 local
+anim down
+anim left
+anim right
+anim up
 color black
 color blue
 color green
@@ -70,8 +74,8 @@ id fragment_menu
 id goDefault
 id image
 id imageView
-id instructions
 id itemsMenu
+id label
 id main
 id map
 id menu1
@@ -83,10 +87,8 @@ id menu6
 id prof
 id rootview
 id start
-id taquinGrid
 id textView
 id title
-id titleTaquin
 id titleText
 id txtFragmentMenu
 layout activity_control
@@ -117,6 +119,7 @@ string index
 string menuNumber
 string seekbarvalue
 string tableau
+string tanquinstate
 string taquinState
 style MenuImage
 style RoundedImage

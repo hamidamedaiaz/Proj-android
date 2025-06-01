@@ -19,6 +19,7 @@
     <string name="menuNumber">menuNumber</string>
     <string name="seekbarvalue">seekBarValue</string>
     <string name="tableau">tableau</string>
+    <string name="tanquinstate">tanquinstate</string>
     <string name="taquinState">taquinState</string>
     <style name="MenuImage" parent="ShapeAppearance.MaterialComponents.SmallComponent">
         <item name="cornerSize">10%</item>

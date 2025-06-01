@@ -26,7 +26,9 @@ int anim design_bottom_sheet_slide_in 0x7f010018
 int anim design_bottom_sheet_slide_out 0x7f010019
 int anim design_snackbar_in 0x7f01001a
 int anim design_snackbar_out 0x7f01001b
+int anim down 0x7f01002c
 int anim fragment_fast_out_extra_slow_in 0x7f01001c
+int anim left 0x7f01002d
 int anim linear_indeterminate_line1_head_interpolator 0x7f01001d
 int anim linear_indeterminate_line1_tail_interpolator 0x7f01001e
 int anim linear_indeterminate_line2_head_interpolator 0x7f01001f
@@ -42,6 +44,8 @@ int anim m3_side_sheet_exit_to_right 0x7f010028
 int anim mtrl_bottom_sheet_slide_in 0x7f010029
 int anim mtrl_bottom_sheet_slide_out 0x7f01002a
 int anim mtrl_card_lowers_interpolator 0x7f01002b
+int anim right 0x7f01002e
+int anim up 0x7f01002f
 int animator design_appbar_state_list_animator 0x7f020000
 int animator design_fab_hide_motion_spec 0x7f020001
 int animator design_fab_show_motion_spec 0x7f020002
@@ -3510,7 +3514,6 @@ int id immediateStop 0x7f0900eb
 int id included 0x7f0900ec
 int id indeterminate 0x7f0900ed
 int id info 0x7f0900ee
-int id instructions 0x7f090225
 int id invisible 0x7f0900ef
 int id inward 0x7f0900f0
 int id italic 0x7f0900f1
@@ -3518,6 +3521,7 @@ int id item_touch_helper_previous_elevation 0x7f0900f2
 int id itemsMenu 0x7f0900f3
 int id jumpToEnd 0x7f0900f4
 int id jumpToStart 0x7f0900f5
+int id label 0x7f09022a
 int id labeled 0x7f0900f6
 int id layout 0x7f0900f7
 int id left 0x7f0900f8
@@ -3751,7 +3755,6 @@ int id tag_transition_group 0x7f0901dd
 int id tag_unhandled_key_event_manager 0x7f0901de
 int id tag_unhandled_key_listeners 0x7f0901df
 int id tag_window_insets_animation_callback 0x7f0901e0
-int id taquinGrid 0x7f090226
 int id text 0x7f0901e1
 int id text2 0x7f0901e2
 int id textEnd 0x7f0901e3
@@ -3772,7 +3775,6 @@ int id textinput_suffix_text 0x7f0901f1
 int id time 0x7f0901f2
 int id title 0x7f0901f3
 int id titleDividerNoCustom 0x7f0901f4
-int id titleTaquin 0x7f090227
 int id titleText 0x7f0901f5
 int id title_template 0x7f0901f6
 int id toggle 0x7f0901f7
@@ -4283,6 +4285,7 @@ int string states 0x7f1000e5
 int string status_bar_notification_info_overflow 0x7f1000e6
 int string summary_collapsed_preference_list 0x7f1000e7
 int string tableau 0x7f1000ed
+int string tanquinstate 0x7f1000ef
 int string taquinState 0x7f1000ee
 int string topo 0x7f1000e8
 int string unknown 0x7f1000e9

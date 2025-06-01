@@ -2,23 +2,33 @@ package edu.polytech.vide;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-
-import androidx.annotation.NonNull;
-
+import android.widget.Button;
+import java.util.ArrayList;
 import java.util.List;
 
 public class TaquinState implements Parcelable {
-    private int holepos;
-    private Integer[] buttons;
+    private List<Integer> buttonsValue = new ArrayList<>();
+    private boolean startVisibility;
+    private int holePosition;
 
-    public TaquinState(int holepos, List<Integer> buttons) {
-        this.holepos = holepos;
-        this.buttons = buttons.toArray(new Integer[0]);
+    public TaquinState(List<Button> buttons, int holePosition) {
+        buttons.forEach(button -> buttonsValue.add(Integer.parseInt(button.getText().toString())));
+        this.startVisibility = !buttons.stream().allMatch(button -> button.getText().toString().equals(button.getTag().toString()));
+        this.holePosition = holePosition;
     }
 
-    public TaquinState(Parcel in) {
-        this.holepos = in.readInt();
-        this.buttons = (Integer[]) in.readArray(Integer.class.getClassLoader());
+    protected TaquinState(Parcel in) {
+        buttonsValue = new ArrayList<>();
+        in.readList(buttonsValue, Integer.class.getClassLoader());
+        startVisibility = in.readByte() != 0;
+        holePosition = in.readInt();
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeList(buttonsValue);
+        dest.writeByte((byte) (startVisibility ? 1 : 0));
+        dest.writeInt(holePosition);
     }
 
     @Override
@@ -26,18 +36,7 @@ public class TaquinState implements Parcelable {
         return 0;
     }
 
-    @Override
-    public void writeToParcel(@NonNull Parcel dest, int flags) {
-        dest.writeInt(holepos);
-        dest.writeArray(buttons);
-    }
-
-    public static Parcelable.Creator<TaquinState> getCreator() {
-        return CREATOR;
-    }
-
-    // non fini car unused
-    public static final Parcelable.Creator<TaquinState> CREATOR = new Parcelable.Creator() {
+    public static final Creator<TaquinState> CREATOR = new Creator<TaquinState>() {
         @Override
         public TaquinState createFromParcel(Parcel in) {
             return new TaquinState(in);
@@ -49,11 +48,15 @@ public class TaquinState implements Parcelable {
         }
     };
 
-    public int getHolepos() {
-        return holepos;
+    public List<Integer> getButtonsValue() {
+        return buttonsValue;
     }
 
-    public Integer[] getButtons() {
-        return buttons;
+    public boolean isStartVisibility() {
+        return startVisibility;
+    }
+
+    public int getHolePosition() {
+        return holePosition;
     }
 }
