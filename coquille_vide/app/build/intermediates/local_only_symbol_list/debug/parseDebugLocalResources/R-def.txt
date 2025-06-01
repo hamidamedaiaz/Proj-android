@@ -2,7 +2,9 @@ R_DEF: Internal format may change without notice
 local
 anim down
 anim left
+anim rallo_entrance
 anim right
+anim scale_in
 anim up
 color black
 color blue
@@ -37,6 +39,7 @@ drawable fondmenu
 drawable home
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_notifications
 drawable menu1
 drawable menu1_s
 drawable menu2
@@ -50,7 +53,9 @@ drawable menu5_s
 drawable menu6
 drawable menu6_s
 drawable prof
+drawable purple_button_background
 drawable rallo
+drawable rallo1
 drawable rotation_animation
 drawable work
 font pokemonsolid
@@ -69,14 +74,19 @@ id button7
 id button8
 id button9
 id buttonPlay
+id characterImage
+id description
 id fragment_main
 id fragment_menu
+id go
 id goDefault
 id image
 id imageView
+id info
 id itemsMenu
 id label
 id main
+id main_title
 id map
 id menu1
 id menu2
@@ -84,8 +94,14 @@ id menu3
 id menu4
 id menu5
 id menu6
+id menu_label
+id picture
 id prof
 id rootview
+id seekBar
+id selector
+id send
+id speed
 id start
 id textView
 id title
@@ -114,6 +130,7 @@ mipmap menu5
 mipmap menu5_s
 mipmap menu6
 mipmap menu6_s
+raw mj
 string app_name
 string index
 string menuNumber

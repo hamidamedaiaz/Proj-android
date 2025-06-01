@@ -45,7 +45,9 @@ anim m3_side_sheet_exit_to_right
 anim mtrl_bottom_sheet_slide_in
 anim mtrl_bottom_sheet_slide_out
 anim mtrl_card_lowers_interpolator
+anim rallo_entrance
 anim right
+anim scale_in
 anim up
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
@@ -3152,6 +3154,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_notifications
 drawable ic_search_black_24
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3250,7 +3253,9 @@ drawable person
 drawable preference_list_divider_material
 drawable previous
 drawable prof
+drawable purple_button_background
 drawable rallo
+drawable rallo1
 drawable rotation_animation
 drawable round_navigation_white_48
 drawable sharp_add_black_36
@@ -3397,6 +3402,7 @@ id center_vertical
 id chain
 id chain2
 id chains
+id characterImage
 id checkbox
 id checked
 id chronometer
@@ -3431,6 +3437,7 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
+id description
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -3489,6 +3496,7 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id go
 id goDefault
 id gone
 id graph
@@ -3538,6 +3546,7 @@ id locale
 id ltr
 id m3_side_sheet
 id main
+id main_title
 id map
 id marquee
 id masked
@@ -3570,6 +3579,7 @@ id menu3
 id menu4
 id menu5
 id menu6
+id menu_label
 id message
 id middle
 id mini
@@ -3653,6 +3663,7 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id picture
 id pin
 id position
 id postLayout
@@ -3697,11 +3708,14 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id seekBar
 id seekbar
 id seekbar_value
 id select_dialog_listview
 id selected
 id selection_type
+id selector
+id send
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3719,6 +3733,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id speed
 id spinner
 id spline
 id split_action_bar
@@ -4052,6 +4067,7 @@ mipmap menu5_s
 mipmap menu6
 mipmap menu6_s
 plurals mtrl_badge_content_description
+raw mj
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

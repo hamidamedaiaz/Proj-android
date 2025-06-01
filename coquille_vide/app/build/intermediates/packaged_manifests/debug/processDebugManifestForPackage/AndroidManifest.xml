@@ -20,6 +20,8 @@
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <supports-screens
         android:anyDensity="true"
@@ -69,6 +71,12 @@
             android:name="edu.polytech.vide.ControlActivity"
             android:exported="true" >
         </activity>
+
+        <service
+            android:name="edu.polytech.vide.NotificationService"
+            android:enabled="true"
+            android:exported="false" />
+
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

@@ -24,8 +24,7 @@ import androidx.fragment.app.FragmentTransaction;
 public class ControlActivity extends AppCompatActivity implements Menuable, Notifiable {
     private final String TAG = "frallo "+getClass().getSimpleName();
 
-    private int seekBarValue = 30;
-    private TaquinState taquinState;
+    private int seekBarValue = 30; // Valeur par défaut ajoutée
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -63,12 +62,7 @@ public class ControlActivity extends AppCompatActivity implements Menuable, Noti
                 mainFragment.setArguments(args);
             } break;
             case TAG_MENU3-1: mainFragment = new Screen3Fragment(); break;
-            case TAG_MENU4-1: {
-                mainFragment = new Screen4Fragment();
-                Bundle args = new Bundle();
-                args.putParcelable(getString(R.string.tanquinstate), taquinState);
-                mainFragment.setArguments(args);
-            } break;
+            case TAG_MENU4-1: mainFragment = new Screen4Fragment(); break;
             case TAG_MENU5-1: mainFragment = new Screen5Fragment(); break;
             case TAG_MENU6-1: mainFragment = new Screen6Fragment(); break;
             default: mainFragment = new Screen1Fragment();  //why not ?
@@ -92,7 +86,7 @@ public class ControlActivity extends AppCompatActivity implements Menuable, Noti
             case 1: break;
             case 2: seekBarValue = (Integer)data; break;
             case 3: break;
-            case 4: taquinState = (TaquinState)data; break;
+            case 4: break;
             case 5: break;
             case 6: break;
         }
