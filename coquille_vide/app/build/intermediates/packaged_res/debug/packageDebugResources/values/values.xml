@@ -22,12 +22,12 @@
     <string name="content2">Je choisis ici les parsonnages que je veux afficher en fonction de leur note</string>
     <string name="content6">awsome team</string>
     <string name="index">index</string>
-    <string name="language">french</string>
+    <string name="language">fr</string>
     <string name="menuNumber">menuNumber</string>
     <string name="seekbarvalue">seekBarValue</string>
     <string name="size">size</string>
     <string name="tableau">tableau</string>
-    <string name="tanquinstate">tanquinstate</string>
+    <string name="tanquinstate">taquinstate</string>
     <string name="taquinState">taquinState</string>
     <style name="MenuImage" parent="ShapeAppearance.MaterialComponents.SmallComponent">
         <item name="cornerSize">10%</item>

@@ -77,7 +77,6 @@ id buttonPlay
 id cc
 id characterImage
 id cpt
-id description
 id dmg
 id fragment_main
 id fragment_menu
@@ -88,9 +87,9 @@ id imageView
 id info
 id itemsMenu
 id label
+id labelScreen1Fragment
 id listView
 id main
-id main_title
 id map
 id menu1
 id menu2
@@ -98,7 +97,6 @@ id menu3
 id menu4
 id menu5
 id menu6
-id menu_label
 id name
 id picture
 id prof
@@ -106,12 +104,12 @@ id rangeBar
 id ratingBar
 id rootview
 id selector
-id send
 id skill
 id start
 id textView
 id title
 id titleText
+id topic
 id txtFragmentMenu
 id utility
 id values

@@ -1,0 +1,6 @@
+edu.polytech.vide.test.app-core-1.5.0-0 C:\Users\user\.gradle\caches\8.11.1\transforms\6a6a103e06657ff61610816b3e017c3d\transformed\core-1.5.0\res
+edu.polytech.vide.test.app-annotation-experimental-1.3.0-1 C:\Users\user\.gradle\caches\8.11.1\transforms\df9cda4edf0d890174693ea9fd7e0230\transformed\annotation-experimental-1.3.0\res
+edu.polytech.vide.test.app-androidTest-2 C:\Users\user\Desktop\ppppppppppppppppppppppppppp\Projet\coquille_vide\app\build\generated\res\resValues\androidTest\debug
+edu.polytech.vide.test.app-mergeDebugAndroidTestResources-3 C:\Users\user\Desktop\ppppppppppppppppppppppppppp\Projet\coquille_vide\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+edu.polytech.vide.test.app-mergeDebugAndroidTestResources-4 C:\Users\user\Desktop\ppppppppppppppppppppppppppp\Projet\coquille_vide\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+edu.polytech.vide.test.app-debugAndroidTest-5 C:\Users\user\Desktop\ppppppppppppppppppppppppppp\Projet\coquille_vide\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
