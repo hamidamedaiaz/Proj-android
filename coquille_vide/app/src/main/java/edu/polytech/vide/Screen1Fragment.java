@@ -1,6 +1,5 @@
 package edu.polytech.vide;
 
-import static edu.polytech.vide.Notifiable.TAG_MENU1;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -31,6 +30,7 @@ import androidx.fragment.app.Fragment;
  */
 public class Screen1Fragment extends Fragment {
     private final String TAG = "frallo "+getClass().getSimpleName();
+    private final static int NUM_FRAGMENT = 1;
     private static final int REQUEST_NOTIFICATION_PERMISSION = 101;
     private Notifiable notifiable;
 
@@ -177,8 +177,8 @@ public class Screen1Fragment extends Fragment {
             notificationService.sendNotification("Wanna send a notification?", "Notification depuis Screen1Fragment");
             Toast.makeText(getContext(), "Notification envoyée!", Toast.LENGTH_SHORT).show();
 
-            // Notifier l'activité
-            notifiable.onClick(TAG_MENU1);
+            // Notifier l'activité - CORRECTION ICI
+            notifiable.onClick(NUM_FRAGMENT);
         } else {
             Log.w(TAG, "Service non disponible");
             Toast.makeText(getContext(), "Service non disponible", Toast.LENGTH_SHORT).show();

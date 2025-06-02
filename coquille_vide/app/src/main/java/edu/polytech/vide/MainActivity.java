@@ -20,13 +20,12 @@ import androidx.appcompat.app.AppCompatActivity;
  * @author F. Rallo - march 2025
  */
 public class MainActivity extends AppCompatActivity {
-    private final String TAG = "frallo "+getClass().getSimpleName();
+    private final String TAG = "frallo " + getClass().getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Intent intent = new Intent(getApplicationContext(), ControlActivity.class);
 
         ImageView image = findViewById(R.id.image);
         image.setImageResource(R.drawable.rallo);
@@ -34,11 +33,12 @@ public class MainActivity extends AppCompatActivity {
         // Démarrer l'animation de Rallo
         startRalloAnimation(image);
 
-        //optional button --> goto menu5
+        // Bouton MAP -> Menu 1 (Screen1Fragment)
         findViewById(R.id.goDefault).setOnClickListener(clic -> {
-            int menuNumber = 5;  //this is number, not index
-            intent.putExtra(getString(R.string.index),menuNumber);
-            Log.d(TAG,"send menu#"+menuNumber);
+            int menuNumber = 1;  // Menu 1 = Screen1Fragment
+            Intent intent = new Intent(getApplicationContext(), ControlActivity.class);
+            intent.putExtra(getString(R.string.index), menuNumber);
+            Log.d(TAG, "send menu#" + menuNumber + " (MAP -> Screen1Fragment)");
             startActivity(intent);
         });
     }

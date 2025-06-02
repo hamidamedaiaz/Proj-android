@@ -3394,6 +3394,7 @@ id cache_measures
 id callMeasure
 id cancel_button
 id carryVelocity
+id cc
 id center
 id centerCrop
 id centerInside
@@ -3424,6 +3425,7 @@ id continuousVelocity
 id coordinator
 id cos
 id counterclockwise
+id cpt
 id cradle
 id currentState
 id custom
@@ -3451,6 +3453,7 @@ id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
 id disjoint
+id dmg
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -3541,6 +3544,7 @@ id line1
 id line3
 id linear
 id listMode
+id listView
 id list_item
 id locale
 id ltr
@@ -3614,6 +3618,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id name
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3675,6 +3680,8 @@ id prof
 id progress_circular
 id progress_horizontal
 id radio
+id rangeBar
+id ratingBar
 id ratio
 id rectangles
 id recycler_view
@@ -3708,7 +3715,6 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
-id seekBar
 id seekbar
 id seekbar_value
 id select_dialog_listview
@@ -3723,6 +3729,7 @@ id showCustom
 id showHome
 id showTitle
 id sin
+id skill
 id skipCollapsed
 id skipped
 id slide
@@ -3733,7 +3740,6 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
-id speed
 id spinner
 id spline
 id split_action_bar
@@ -3811,6 +3817,8 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id utility
+id values
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3950,6 +3958,7 @@ layout abc_tooltip
 layout activity_control
 layout activity_main
 layout bonuspack_bubble
+layout character_layout
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3974,6 +3983,8 @@ layout fragment_screen3
 layout fragment_screen4
 layout fragment_screen5
 layout fragment_screen6
+layout fragment_vallorant
+layout fragment_valorant_list
 layout image_frame
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -4068,6 +4079,8 @@ mipmap menu6
 mipmap menu6_s
 plurals mtrl_badge_content_description
 raw mj
+string MainFragment_content
+string Screen1Fragment_label
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -4119,9 +4132,11 @@ string cacheManagerHandlingMessage
 string cacheManagerNo
 string cacheManagerUnsupportedSource
 string cacheManagerYes
+string character
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
+string characterlist
 string clear_text_end_icon_content_description
 string common_google_play_services_enable_button
 string common_google_play_services_enable_text
@@ -4142,6 +4157,8 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string compass
+string content2
+string content6
 string copy
 string cyclemap
 string error_a11y_label
@@ -4168,6 +4185,7 @@ string hills
 string icon_content_description
 string index
 string item_view_role_description
+string language
 string m3_exceed_max_badge_text_suffix
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular
@@ -4297,6 +4315,7 @@ string set_mode_online
 string set_mode_show_me
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
+string size
 string snapshot
 string states
 string status_bar_notification_info_overflow

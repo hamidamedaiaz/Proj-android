@@ -23,6 +23,7 @@ import androidx.fragment.app.Fragment;
 import android.content.Context;
 
 public class Screen5Fragment extends Fragment {
+    private final static int NUM_FRAGMENT = 5;
 
     private final String TAG = "frallo " + getClass().getSimpleName();
     private Notifiable notifiable;
@@ -57,8 +58,8 @@ public class Screen5Fragment extends Fragment {
                         Bitmap picture = (Bitmap) result.getData().getExtras().get("data");
                         imageView.setImageBitmap(picture);
 
-                        // Notifier l'activité que l'image a été prise
-                        notifiable.onDataChange(Notifiable.TAG_MENU5, "Photo captured");
+                        // Notifier l'activité que l'image a été prise - CORRECTION ICI
+                        notifiable.onDataChange(NUM_FRAGMENT, "Photo captured");
                     }
                 }
         );
@@ -85,7 +86,7 @@ public class Screen5Fragment extends Fragment {
 
         buttonTakePhoto.setOnClickListener(v -> {
             // Notifier le clic sur le bouton
-            notifiable.onClick(Notifiable.TAG_MENU5);
+            notifiable.onClick(NUM_FRAGMENT);
 
             if (ContextCompat.checkSelfPermission(requireContext(), Manifest.permission.CAMERA)
                     != PackageManager.PERMISSION_GRANTED) {
