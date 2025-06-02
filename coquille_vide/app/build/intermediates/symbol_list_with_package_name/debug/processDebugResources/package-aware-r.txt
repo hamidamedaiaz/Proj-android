@@ -3128,6 +3128,7 @@ drawable earth6
 drawable earth7
 drawable earth8
 drawable earth9
+drawable edit_text_background
 drawable fond1
 drawable fond2
 drawable fond3
@@ -3390,6 +3391,7 @@ id button8
 id button9
 id buttonPanel
 id buttonPlay
+id buttons_layout
 id cache_measures
 id callMeasure
 id cancel_button
@@ -3414,6 +3416,7 @@ id clip_vertical
 id clockwise
 id closest
 id collapseActionView
+id columns
 id compress
 id confirm_button
 id constraint
@@ -3530,10 +3533,10 @@ id inward
 id italic
 id item_touch_helper_previous_elevation
 id itemsMenu
+id iterations
 id jumpToEnd
 id jumpToStart
 id label
-id labelScreen1Fragment
 id labeled
 id layout
 id left
@@ -3550,6 +3553,7 @@ id locale
 id ltr
 id m3_side_sheet
 id main
+id manageSpeed
 id map
 id marquee
 id masked
@@ -3678,6 +3682,7 @@ id prof
 id progress_circular
 id progress_horizontal
 id radio
+id rallo
 id rangeBar
 id ratingBar
 id ratio
@@ -3692,6 +3697,7 @@ id right_side
 id rootview
 id rounded
 id row_index_key
+id rows
 id rtl
 id save_non_transition_alpha
 id save_overlay_view
@@ -3713,6 +3719,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id seekBar
 id seekbar
 id seekbar_value
 id select_dialog_listview
@@ -3737,6 +3744,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id speed
 id spinner
 id spline
 id split_action_bar
@@ -3744,6 +3752,7 @@ id spread
 id spread_inside
 id spring
 id square
+id squares
 id src_atop
 id src_in
 id src_over
@@ -3799,7 +3808,6 @@ id title_template
 id toggle
 id top
 id topPanel
-id topic
 id touch_outside
 id transitionToEnd
 id transitionToStart
@@ -3975,12 +3983,14 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout expand_button
 layout fragment_menu
+layout fragment_mvc
 layout fragment_screen1
 layout fragment_screen2
 layout fragment_screen3
 layout fragment_screen4
 layout fragment_screen5
 layout fragment_screen6
+layout fragment_v
 layout fragment_vallorant
 layout fragment_valorant_list
 layout image_frame
@@ -4318,9 +4328,11 @@ string snapshot
 string states
 string status_bar_notification_info_overflow
 string summary_collapsed_preference_list
+string tab
 string tableau
 string tanquinstate
 string taquinState
+string title
 string topo
 string unknown
 string v7_preference_off

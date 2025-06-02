@@ -37,11 +37,14 @@ import java.util.List;
  */
 public class ControlActivity extends AppCompatActivity implements Menuable, Notifiable, PostExecuteActivity<ValorantCharacter> {
     private final String TAG = "frallo "+getClass().getSimpleName();
+
+
     private static final int REQUEST_NOTIFICATION_PERMISSION = 101;
     private List<Float> rangingBarValues = Arrays.asList(10f, 50f);
     private TaquinState tanquinState;
     private NotificationService notificationService;
     private ServiceConnection serviceConnection = new ServiceConnection() {
+
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
             NotificationService.LocalBinder binder = (NotificationService.LocalBinder) service;
@@ -87,6 +90,18 @@ public class ControlActivity extends AppCompatActivity implements Menuable, Noti
         else {
             startNotificationService(); // pas besoin de permission en dessous d'API 33
         }
+    }
+    public void startMVC(int[] tabl) {
+        Log.d(TAG, "MVC Started");
+
+        edu.polytech.vide.V_Fragment gameOfLifeFragment = new edu.polytech.vide.V_Fragment();
+        Bundle args = new Bundle();
+        args.putIntArray(getString(R.string.tableau), tabl); // example size
+        gameOfLifeFragment.setArguments(args);
+
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragment_main, gameOfLifeFragment);
+        transaction.commit();
     }
 
 

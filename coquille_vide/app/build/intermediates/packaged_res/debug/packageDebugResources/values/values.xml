@@ -26,9 +26,11 @@
     <string name="menuNumber">menuNumber</string>
     <string name="seekbarvalue">seekBarValue</string>
     <string name="size">size</string>
+    <string name="tab">tab</string>
     <string name="tableau">tableau</string>
     <string name="tanquinstate">taquinstate</string>
     <string name="taquinState">taquinState</string>
+    <string name="title">Jeu de la Vie</string>
     <style name="MenuImage" parent="ShapeAppearance.MaterialComponents.SmallComponent">
         <item name="cornerSize">10%</item>
     </style>

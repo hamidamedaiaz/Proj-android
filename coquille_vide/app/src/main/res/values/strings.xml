@@ -14,4 +14,6 @@
     <string name="character">valorantCharacter</string>
     <string name="size">size</string>
     <string name="characterlist">characterList</string>
+    <string name="tab">tab</string>
+    <string name="title">Jeu de la Vie</string>
 </resources>

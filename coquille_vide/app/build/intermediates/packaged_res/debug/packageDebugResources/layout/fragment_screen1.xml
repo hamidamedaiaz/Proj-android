@@ -1,80 +1,92 @@
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/design_default_color_secondary_variant"
-    tools:context=".Screen1Fragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:src="@drawable/fond1"
+        android:scaleType="centerCrop"
+        android:alpha="0.7"/>
 
-        <!-- Image de fond avec alpha -->
-        <ImageView
-            android:id="@+id/backgroundImage"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/fond1"
-            android:alpha="0.2"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+    <!-- rajoute un filtre vert qui rend l'image plus homogène pour améliorer la visibilité -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#225522"
+        android:alpha="0.7"/>
 
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/rallo"
+        app:shapeAppearanceOverlay="@style/RoundedImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/rallo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"/>
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/picture"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:src="@drawable/rallo"
-            android:layout_margin="30dp"
-            app:shapeAppearanceOverlay="@style/RoundedImage"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Jeu de la vie"
+        app:layout_constraintStart_toEndOf="@id/rallo"
+        app:layout_constraintBottom_toBottomOf="@id/rallo"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:background="#55FFFFFF"/>
 
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="choisissez ici le nombre de lignes et de colonnes souhaitées"
+        app:layout_constraintTop_toBottomOf="@id/rallo"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
 
-        <TextView
-            android:id="@+id/labelScreen1Fragment"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="DEL THAT IN JAVA CODE"
-            android:background="#38A5DFFD"
-            android:textColor="@color/white"
-            android:textSize="28sp"
-            app:layout_constraintBottom_toBottomOf="@id/picture"
-            app:layout_constraintLeft_toRightOf="@id/picture"
-            app:layout_constraintRight_toRightOf="parent"/>
+    <EditText
+        android:id="@+id/rows"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:hint="rows"
+        android:inputType="number"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        />
 
-        <TextView
-            android:id="@+id/topic"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/MainFragment_content"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:layout_margin="5dp"
-            android:layout_marginTop="10dp"
-            app:layout_constraintTop_toBottomOf="@id/labelScreen1Fragment"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
+    <EditText
+        android:id="@+id/columns"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rows"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:hint="columns"
+        android:inputType="number"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="GO"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+    <Button
+        android:id="@+id/go"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO"
+        app:layout_constraintTop_toBottomOf="@id/columns"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
